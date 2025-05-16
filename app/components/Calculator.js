@@ -192,18 +192,6 @@ const Calculator = () => {
             <h3 className="text-2xl font-bold mb-4">Approx Monthly Emi - ₹{results.result2}</h3>
             <h3 className="text-2xl font-bold mb-4">Total Loan Amount - ₹{results.result4}</h3>
             <h3 className="text-2xl font-bold mb-4">Total interest payable with {sliderValue2}% interest - ₹{results.result5}</h3>
-            {isVideoVisible && (
-              <div className="flex items-center justify-center">
-                <video
-                  ref={videoRef}
-                  width="60%"
-                  autoPlay
-                  src="/gareeb.mp4"
-                >
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            )}
             {showConfetti && <Confetti width={width} height={height} />}
             <button
               onClick={closeModal}
